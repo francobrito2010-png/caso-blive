@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Antes e depois: B'Live Lounge Bar · Franco Antonio</title>
+<meta name="description" content="Caso real: o site antigo e o novo do B'Live Lounge Bar, em Lisboa. Arraste a barra para comparar.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Antes e depois: B'Live Lounge Bar">
+<meta property="og:description" content="Caso real em Lisboa. Arraste a barra para comparar o site antigo e o novo.">
+<meta property="og:image" content="https://francobrito2010-png.github.io/caso-blive/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://francobrito2010-png.github.io/caso-blive/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+:root{
+  --bg:#141311; --surface:#1e1c19; --fg:#efebe4; --muted:#a8a197; --line:#34302a; --accent:#3cc47a; --accent-ink:#0d1f14;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif; --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5}
+img{max-width:100%}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px;display:flex;flex-direction:column;gap:24px}
+.lang{display:flex;gap:6px;justify-content:flex-end}
+.lang a{font-size:13px;border:1px solid var(--line);color:var(--fg);text-decoration:none;border-radius:999px;padding:4px 10px}
+.lang a[aria-current=true]{border-color:var(--fg)}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,6vw,46px);line-height:1.05;margin:6px 0 10px;text-wrap:balance}
+.lead{color:var(--muted);margin:0;max-width:60ch}
+.cmp{position:relative;aspect-ratio:1366/820;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;touch-action:pan-y;--cut:50%}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;user-select:none;-webkit-user-drag:none}
+.cmp .after{clip-path:inset(0 0 0 var(--cut))}
+.divider{position:absolute;top:0;bottom:0;left:var(--cut);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.3);pointer-events:none}
+.knob{position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#fff;color:#141311;display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.tag{position:absolute;top:12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;pointer-events:none}
+.tagL{left:12px;background:#141311;color:#fff}.tagR{right:12px;background:#fff;color:#141311}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.hint{font-size:13px;color:var(--muted);text-align:center;margin:8px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.grid div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.grid b{display:block;font-family:var(--display);font-weight:500;font-size:18px;margin-bottom:2px}
+.grid span{color:var(--muted);font-size:15px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;font-size:17px;border-radius:12px;padding:16px;text-align:center}
+.go{background:var(--accent);color:var(--accent-ink)}
+.live{background:var(--fg);color:var(--bg)}
+a:focus-visible,input:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.small{font-size:13px;color:var(--muted);margin:0}
+footer{border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="lang" aria-label="Idioma"><a href="#pt" data-l="pt">PT</a><a href="#en" data-l="en">EN</a><a href="#es" data-l="es">ES</a></nav>
+  <header>
+    <p class="eyebrow" id="eyebrow">Caso real</p>
+    <h1 id="title">Antes e depois: B’Live Lounge Bar</h1>
+    <p class="lead" id="lead">Franco Antonio refez o site deste lounge de shisha e cocktails em Lisboa. Arraste a barra para comparar.</p>
+  </header>
+  <section>
+    <div class="cmp" id="cmp">
+      <img src="antes.jpg" alt="Site antigo do B'Live Lounge Bar, em Wix" width="1366" height="820">
+      <img class="after" src="depois.jpg" alt="Site novo do B'Live Lounge Bar" width="1366" height="820">
+      <div class="divider"><div class="knob">⇆</div></div>
+      <span class="tag tagL" id="tagL">Antes</span><span class="tag tagR" id="tagR">Depois</span>
+      <input type="range" id="cut" min="0" max="100" value="50" aria-label="Comparar antes e depois">
+    </div>
+    <p class="hint" id="hint">Arraste para o lado para comparar</p>
+  </section>
+  <section class="grid">
+    <div><b id="b1">Antes</b><span id="d1">Uma só página: texto “Sobre” e links para as redes. Sem menu, sem reservas.</span></div>
+    <div><b id="b2">Depois</b><span id="d2">Carta, ambiente, eventos, reservas e WhatsApp num toque.</span></div>
+  </section>
+  <a class="btn live" id="live" href="https://www.bliveloungebar.com/" target="_blank" rel="noopener">Ver o site do B’Live ao vivo ↗</a>
+  <a class="btn go" id="cta" href="https://wa.me/351911185716?text=Ol%C3%A1%20Franco!%20Vi%20o%20antes%20e%20depois%20do%20B%E2%80%99Live%20e%20gostava%20de%20saber%20mais." target="_blank" rel="noopener">Quero um site assim</a>
+  <footer><p class="small" id="src">Antes: site antigo em Wix (Internet Archive, set. 2024, com as imagens originais). Depois: o site atual. Feito por Franco Antonio.</p></footer>
+</div>
+<script>
+const T = {
+  pt:{eyebrow:'Caso real', title:'Antes e depois: B’Live Lounge Bar', lead:'Franco Antonio refez o site deste lounge de shisha e cocktails em Lisboa. Arraste a barra para comparar.', tagL:'Antes', tagR:'Depois', hint:'Arraste para o lado para comparar',
+      b1:'Antes', d1:'Uma só página: texto “Sobre” e links para as redes. Sem menu, sem reservas.', b2:'Depois', d2:'Carta, ambiente, eventos, reservas e WhatsApp num toque.',
+      live:'Ver o site do B’Live ao vivo ↗', cta:'Quero um site assim', msg:'Olá Franco! Vi o antes e depois do B’Live e gostava de saber mais.',
+      src:'Antes: site antigo em Wix (Internet Archive, set. 2024, com as imagens originais). Depois: o site atual. Feito por Franco Antonio.'},
+  en:{eyebrow:'Real case', title:'Before and after: B’Live Lounge Bar', lead:'Franco Antonio rebuilt the website of this shisha and cocktail lounge in Lisbon. Drag the bar to compare.', tagL:'Before', tagR:'After', hint:'Drag sideways to compare',
+      b1:'Before', d1:'A single page: an “About” text and social links. No menu, no bookings.', b2:'After', d2:'Menu, ambience, events, bookings and one-tap WhatsApp.',
+      live:'See the B’Live site live ↗', cta:'I want a site like this', msg:'Hi Franco! I saw the B’Live before and after and I’d like to know more.',
+      src:'Before: old Wix website (Internet Archive, Sep 2024, with the original images). After: the current website. Made by Franco Antonio.'},
+  es:{eyebrow:'Caso real', title:'Antes y después: B’Live Lounge Bar', lead:'Franco Antonio rehízo la web de este lounge de shisha y cócteles en Lisboa. Arrastra la barra para comparar.', tagL:'Antes', tagR:'Después', hint:'Arrastra hacia los lados para comparar',
+      b1:'Antes', d1:'Una sola página: texto “Sobre” y links a redes. Sin carta, sin reservas.', b2:'Después', d2:'Carta, ambiente, eventos, reservas y WhatsApp con un toque.',
+      live:'Ver la web de B’Live en directo ↗', cta:'Quiero una web así', msg:'¡Hola Franco! Vi el antes y después de B’Live y me gustaría saber más.',
+      src:'Antes: web antigua en Wix (Internet Archive, sept. 2024, con las imágenes originales). Después: la web actual. Hecho por Franco Antonio.'}
+};
+const $ = id => document.getElementById(id);
+function render(){
+  const l = (location.hash.slice(1) || 'pt').toLowerCase(), t = T[l] || T.pt, lang = T[l] ? l : 'pt';
+  document.documentElement.lang = lang;
+  ['eyebrow','title','lead','tagL','tagR','hint','b1','d1','b2','d2','live','cta','src'].forEach(k => { $(k).textContent = t[k]; });
+  $('cta').href = 'https://wa.me/351911185716?text=' + encodeURIComponent(t.msg);
+  document.title = t.title + ' · Franco Antonio';
+  document.querySelectorAll('.lang a').forEach(a => a.setAttribute('aria-current', a.dataset.l === lang));
+}
+$('cut').addEventListener('input', e => $('cmp').style.setProperty('--cut', e.target.value + '%'));
+window.addEventListener('hashchange', render);
+render();
+</script>
+</body>
+</html>
